@@ -113,41 +113,42 @@ La información retornará en formato JSON, el cual se encontrará conformado po
 	String rh="";
 	String fechaNacimiento="";
 	String sexo="";
- String fechaExpedicion = "";
- String lugarExpedicion = "";
- String estado = "";
- String resolucion = "";
- String fechaResolucion = "";
- String fechaConsulta = "";
- String fuenteFallo = "";
- String numeroDocumento = "";
- String tipoDocumento = "";
- String pais = "";
- float tipoNombre = 0;
+	String fechaExpedicion = "";
+	String lugarExpedicion = "";
+	String estado = "";
+	String resolucion = "";
+	String fechaResolucion = 
+	String fechaConsulta = "";
+	String fuenteFallo = "";
+	String numeroDocumento = "";
+	String tipoDocumento = "";
+	String pais = "";
+	float tipoNombre = 0;
+	
 
-toString() {
-        return "InfoTarjeta{" +
-                "primerApellido='" + primerApellido + '\'' +
-                ", segundoApellido='" + segundoApellido + '\'' +
-                ", primerNombre='" + primerNombre + '\'' +
-                ", segundoNombre='" + segundoNombre + '\'' +
-                ", cedula='" + cedula + '\'' +
-                ", rh='" + rh + '\'' +
-                ", fechaNacimiento='" + fechaNacimiento + '\'' +
-                ", sexo='" + sexo + '\'' +
-                ", fechaExpedicion='" + fechaExpedicion + '\'' +
-                ", lugarExpedicion='" + lugarExpedicion + '\'' +
-                ", estado='" + estado + '\'' +
-                ", resolucion='" + resolucion + '\'' +
-                ", fechaResolucion='" + fechaResolucion + '\'' +
-                ", fechaConsulta='" + fechaConsulta + '\'' +
-                ", fuenteFallo='" + fuenteFallo + '\'' +
-                ", numeroDocumento='" + numeroDocumento + '\'' +
-                ", tipoDocumento='" + tipoDocumento + '\'' +
-                ", pais='" + pais + '\'' +
-                ", tipoNombre='" + tipoNombre + '\'' +
+        toString() {
+                return "InfoTarjeta{" +
+                        "primerApellido='" + primerApellido + '\'' +
+                        ", segundoApellido='" + segundoApellido + '\'' +
+                        ", primerNombre='" + primerNombre + '\'' +
+                        ", segundoNombre='" + segundoNombre + '\'' +
+                        ", cedula='" + cedula + '\'' +
+                        ", rh='" + rh + '\'' +
+                        ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                        ", sexo='" + sexo + '\'' +
+                        ", fechaExpedicion='" + fechaExpedicion + '\'' +
+                        ", lugarExpedicion='" + lugarExpedicion + '\'' +
+                        ", estado='" + estado + '\'' +
+                        ", resolucion='" + resolucion + '\'' +
+                        ", fechaResolucion='" + fechaResolucion + '\'' +
+                        ", fechaConsulta='" + fechaConsulta + '\'' +
+                        ", fuenteFallo='" + fuenteFallo + '\'' +
+                        ", numeroDocumento='" + numeroDocumento + '\'' +
+                        ", tipoDocumento='" + tipoDocumento + '\'' +
+                        ", pais='" + pais + '\'' +
+                        ", tipoNombre='" + tipoNombre + '\'' +
                 '}';
-    }
+             }
 	}
 
 ### Requerimientos
