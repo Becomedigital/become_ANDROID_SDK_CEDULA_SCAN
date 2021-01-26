@@ -71,18 +71,18 @@ En el método **_onCreate()_** de su clase de aplicación, inicialice Become uti
     		                    textResponse.setText(responseIV.toString());  
     		                    Log.d ("responseIV", responseIV.toString());  
     		              }  
-  		              
+			      
     		             @Override  
     		             public void onCancel() {  
     		              
                              }  
-                   
+			     
     		             @Override  
     		             public void onError(LoginError pLoginError) {  
     		                  Log.d ("Error", pLoginError.getMessage ( ));  
-    		             }  		      
-		         });  
-		      }  
+    		             } 
+			     
+		         });   
 		    }
 
 ### Estructura encargada de la definición del estado de validación _cancelado_ por el usuario
