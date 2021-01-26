@@ -47,16 +47,15 @@ En el método **_onCreate()_** de su clase de aplicación, inicialice Become uti
       private final BecomeCallBackManager mCallbackManager = BecomeCallBackManager.createNew ( );  
       
 		     @Override  
-		     protected void onCreate(Bundle savedInstanceState) {  
-		      super.onCreate(savedInstanceState);  
+           protected void onCreate(Bundle savedInstanceState) {  
+	     super.onCreate(savedInstanceState);  
 		      
-		      setContentView(R.layout.activity_main);
-		    
-	
-		      //Instancia para iniciar la interfaz
-		          String clientSecret = "SU CLIENTSECRET AQUI";
-                          String clientId = "SU CLIENID AQUI";
-                          String contractId = "SU CONTRACID AQUI";
+		    setContentView(R.layout.activity_main);
+		   
+		    //Instancia para iniciar la interfaz
+		    String clientSecret = "SU CLIENTSECRET AQUI";
+	            String clientId = "SU CLIENID AQUI";
+	            String contractId = "SU CONTRACID AQUI";
 
                     BecomeResponseManager.getInstance().startAutentication(MainActivity.this,
                                                                             new BDIVConfig(clientId,
@@ -73,9 +72,7 @@ En el método **_onCreate()_** de su clase de aplicación, inicialice Become uti
     		              }  
 			      
     		             @Override  
-    		             public void onCancel() {  
-    		              
-                             }  
+    		             public void onCancel() {}  
 			     
     		             @Override  
     		             public void onError(LoginError pLoginError) {  
@@ -83,7 +80,7 @@ En el método **_onCreate()_** de su clase de aplicación, inicialice Become uti
     		             } 
 			     
 		         });   
-		    }
+           }
 
 ### Estructura encargada de la definición del estado de validación _cancelado_ por el usuario
 
