@@ -55,33 +55,33 @@ En el método **_onCreate()_** de su clase de aplicación, inicialice Become uti
 	
 		      //Instancia para iniciar la interfaz
 		          String clientSecret = "SU CLIENTSECRET AQUI";
-            String clientId = "SU CLIENID AQUI";
-            String contractId = "SU CONTRACID AQUI";
+                          String clientId = "SU CLIENID AQUI";
+                          String contractId = "SU CONTRACID AQUI";
 
-            BecomeResponseManager.getInstance().startAutentication(MainActivity.this,
-                    new BDIVConfig(clientId,
-                            clientSecret,
-                            contractId
-                    ));
-		      BecomeResponseManager.getInstance ( ).registerCallback (mCallbackManager, new BecomeInterfaseCallback( ) {  
+                    BecomeResponseManager.getInstance().startAutentication(MainActivity.this,
+                                                                            new BDIVConfig(clientId,
+                                                                                    clientSecret,
+                                                                                    contractId
+                                                                            ));
+		    BecomeResponseManager.getInstance ( ).registerCallback (mCallbackManager, new BecomeInterfaseCallback( ) {  
           
-                         @Override  
-    		     public void onSuccess(final InfoDNI responseIV) {  
-    		      TextView textResponse = findViewById(R.id.textResponse);  
-    		      textResponse.setText(responseIV.toString());  
-    		      Log.d ("responseIV", responseIV.toString());  
-    		      }  
-  		      
-    		     @Override  
-    		     public void onCancel() {  
-    		      
-                         }  
-           
-    		     @Override  
-    		     public void onError(LoginError pLoginError) {  
-    		      Log.d ("Error", pLoginError.getMessage ( ));  
-    		      }  		      
-		     });  
+                             @Override  
+    		             public void onSuccess(final InfoDNI responseIV) {  
+    		                    TextView textResponse = findViewById(R.id.textResponse);  
+    		                    textResponse.setText(responseIV.toString());  
+    		                    Log.d ("responseIV", responseIV.toString());  
+    		              }  
+  		              
+    		             @Override  
+    		             public void onCancel() {  
+    		              
+                             }  
+                   
+    		             @Override  
+    		             public void onError(LoginError pLoginError) {  
+    		                  Log.d ("Error", pLoginError.getMessage ( ));  
+    		             }  		      
+		         });  
 		      }  
 		    }
 
