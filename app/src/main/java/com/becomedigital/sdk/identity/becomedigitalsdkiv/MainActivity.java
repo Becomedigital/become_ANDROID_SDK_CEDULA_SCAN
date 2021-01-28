@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Button btnAut = findViewById(R.id.btnAuth);
         btnAut.setOnClickListener(view -> {
 
-            String clientSecret = "FKLDM63GPH89TISBXNZ4YJUE57WRQA25";
-            String clientId = "acc_demo";
-            String contractId = "7";
+            String clientSecret = "";
+            String clientId = "";
+            String contractId = "";
 
             BecomeResponseManager.getInstance().startAutentication(MainActivity.this,
                     new BDIVConfig(clientId,
